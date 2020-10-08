@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*-
 
 """
-Copyright (c) 2019 Valentin B.
-A simple music bot written in discord.py using youtube-dl.
-Though it's a simple example, music bots are complex and require much time and knowledge until they work perfectly.
-Use this as an example or a base for your own bot and extend it as you want. If there are any bugs, please let me know.
-Requirements:
+Copyright (c) 2020 Benjamin C.
+Bot Disord  Pytrhon écrit avec in discord.py using youtube-dl. Vous pouvez l'arranger à votre sauce.
+Obligé avant utilistaion:
 Python 3.5+
 pip install -U discord.py pynacl youtube-dl
-You also need FFmpeg in your PATH environment variable or the FFmpeg.exe binary in your bot's directory on Windows.
+Vous avez aussi besoins du fichier ffmpeg dans votre PATH windows=, bonne chance !
 """
 
 import asyncio
@@ -22,7 +20,7 @@ import youtube_dl
 from async_timeout import timeout
 from discord.ext import commands
 
-# Silence useless bug reports messages
+#Signalement de tout bug
 youtube_dl.utils.bug_reports_message = lambda: ''
 
 
@@ -230,10 +228,6 @@ class VoiceState:
             self.next.clear()
 
             if not self.loop:
-                # Try to get the next song within 3 minutes.
-                # If no song will be added to the queue in time,
-                # the player will disconnect due to performance
-                # reasons.
                 try:
                     async with timeout(180):  # 3 minutes
                         self.current = await self.songs.get()
@@ -516,4 +510,4 @@ async def createur(ctx):
 async def on_ready():
     print('Logged in as:\n{0.user.name}\n{0.user.id}'.format(bot))
 
-bot.run("NzYxNTc0ODQ5NDA3NDgzOTE0.X3cl2Q.X62z08hsHL62Am0yw0pDz6jWjzI")
+bot.run("Ton Token")
