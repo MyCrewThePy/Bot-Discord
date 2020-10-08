@@ -6,7 +6,9 @@ Bot Disord  Pytrhon écrit avec in discord.py using youtube-dl. Vous pouvez l'ar
 Obligé avant utilistaion:
 Python 3.5+
 pip install -U discord.py pynacl youtube-dl
-Vous avez aussi besoins du fichier ffmpeg dans votre PATH windows=, bonne chance !
+Vous avez aussi besoins du fichier ffmpeg dans votre PATH windows, bonne chance !
+(Un peu d'aide ici grace a la vidéo non repertoriée de Titouan_Legend --> https://www.youtube.com/watch?v=tPi3PQWP3sc ,
+voici sa chaine https://www.youtube.com/channel/UChDVo_Uqomuk7KnMVp-Lhhw)
 """
 
 import asyncio
