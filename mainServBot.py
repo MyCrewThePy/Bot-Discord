@@ -2,7 +2,7 @@
 
 """
 Copyright (c) 2020 Benjamin C.
-Bot Disord  Pytrhon écrit avec in discord.py using youtube-dl. Vous pouvez l'arranger à votre sauce.
+Bot Disord  Pytrhon écrit avec discord.py net en utilisant en youtube-dl. Vous pouvez l'arranger à votre sauce.
 Obligé avant utilistaion:
 Python 3.5+
 pip install -U discord.py pynacl youtube-dl
