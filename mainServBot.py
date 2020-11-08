@@ -354,7 +354,7 @@ class Music(commands.Cog):
     async def _pause(self, ctx: commands.Context):
         """Met en pause le son actuel"""
 
-        if not ctx.voice_state.is_playing and ctx.voice_state.voice.is_playing():
+        if ctx.voice_state.is_playing and ctx.voice_state.voice.is_playing():
             ctx.voice_state.voice.pause()
             await ctx.message.add_reaction('⏯')
 
@@ -363,7 +363,7 @@ class Music(commands.Cog):
     async def _resume(self, ctx: commands.Context):
         """Reprends à jouer"""
 
-        if not ctx.voice_state.is_playing and ctx.voice_state.voice.is_paused():
+        if ctx.voice_state.is_playing and ctx.voice_state.voice.is_paused():
             ctx.voice_state.voice.resume()
             await ctx.message.add_reaction('⏯')
 
